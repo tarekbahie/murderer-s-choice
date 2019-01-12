@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,11 +59,26 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="17E-TM-9cz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJt-rx-krF">
+                                <rect key="frame" x="14" y="44" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.69593638181686401" green="0.26420283317565918" blue="0.20388999581336975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="09T-nf-Hlv"/>
+                                    <constraint firstAttribute="width" constant="60" id="uaX-ux-gxl"/>
+                                </constraints>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartBtnPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iJp-g4-s3m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="YYD-qC-cgr" firstAttribute="top" secondItem="u0E-Z6-us4" secondAttribute="bottom" constant="34" id="1pn-V9-Sph"/>
                             <constraint firstItem="Erf-gv-fGo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="48o-b2-ESo"/>
                             <constraint firstAttribute="trailing" secondItem="u0E-Z6-us4" secondAttribute="trailing" constant="16" id="A5L-N2-gpr"/>
+                            <constraint firstItem="BJt-rx-krF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="DGW-9R-kCv"/>
                             <constraint firstItem="u0E-Z6-us4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="H73-ur-bFp"/>
                             <constraint firstItem="amk-E0-c5D" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Hea-Xq-KoH"/>
                             <constraint firstItem="amk-E0-c5D" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="SOg-Hz-lzD"/>
@@ -72,6 +87,7 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="YYD-qC-cgr" secondAttribute="bottom" constant="18" id="Zil-rd-Zl2"/>
                             <constraint firstAttribute="trailing" secondItem="Erf-gv-fGo" secondAttribute="trailing" id="Zqj-Tf-xWO"/>
                             <constraint firstItem="YYD-qC-cgr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="d5M-i4-lR2"/>
+                            <constraint firstItem="BJt-rx-krF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="14" id="e2L-eF-Z6h"/>
                             <constraint firstAttribute="trailing" secondItem="YYD-qC-cgr" secondAttribute="trailing" constant="16" id="mba-eL-D4o"/>
                             <constraint firstItem="u0E-Z6-us4" firstAttribute="top" secondItem="amk-E0-c5D" secondAttribute="bottom" constant="8" id="o7B-8v-9JJ"/>
                             <constraint firstAttribute="bottom" secondItem="Erf-gv-fGo" secondAttribute="bottom" id="oHQ-qB-aKu"/>
@@ -79,13 +95,14 @@
                     </view>
                     <connections>
                         <outlet property="bottomButton" destination="YYD-qC-cgr" id="oTr-dl-hKK"/>
+                        <outlet property="restartBtn" destination="BJt-rx-krF" id="d3g-2p-9mt"/>
                         <outlet property="storyTextView" destination="amk-E0-c5D" id="TU8-d8-Hye"/>
                         <outlet property="topButton" destination="u0E-Z6-us4" id="Dfm-eR-Gan"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320" y="286.95652173913044"/>
+            <point key="canvasLocation" x="319.19999999999999" y="286.69950738916259"/>
         </scene>
     </scenes>
     <resources>
